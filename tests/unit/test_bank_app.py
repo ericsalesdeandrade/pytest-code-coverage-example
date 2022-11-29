@@ -1,6 +1,11 @@
-def test_check_id(bank_app_check_id) -> None:
-    response = bank_app_check_id.check_id()
+def test_check_id_true(bank_app_check_id_true) -> None:
+    response = bank_app_check_id_true.check_id()
     assert response is True
+
+
+def test_check_id_false(bank_app_check_id_false) -> None:
+    response = bank_app_check_id_false.check_id()
+    assert response is False
 
 
 def test_time_at_address_true(

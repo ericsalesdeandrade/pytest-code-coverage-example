@@ -3,9 +3,16 @@ from bank_app.core import BankApp
 
 
 @pytest.fixture(scope="class")
-def bank_app_check_id():
+def bank_app_check_id_true():
     return BankApp(name="Eric Sales De Andrade",
                    dob="01-01-1981",
+                   move_in_date="01-01-1999")
+
+
+@pytest.fixture(scope="class")
+def bank_app_check_id_false():
+    return BankApp(name=None,
+                   dob=None,
                    move_in_date="01-01-1999")
 
 
