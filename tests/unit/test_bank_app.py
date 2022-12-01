@@ -20,29 +20,25 @@ def test_check_id_false(bank_app_check_id_false) -> None:
     assert response is False
 
 
-def test_time_at_address_true(
-        bank_app_check_time_at_address_true) -> None:
+def test_time_at_address_true(bank_app_check_time_at_address_true) -> None:
     """
     Test to check if time at address is True
     :param bank_app_check_time_at_address_true:
         Fixture (defined in conftest.py)
     :return: None
     """
-    response = bank_app_check_time_at_address_true \
-        .check_time_at_address()
+    response = bank_app_check_time_at_address_true.check_time_at_address()
     assert response is True
 
 
-def test_time_at_address_false(
-        bank_app_check_time_at_address_false) -> None:
+def test_time_at_address_false(bank_app_check_time_at_address_false) -> None:
     """
     Test to check if time at address is False
     :param bank_app_check_time_at_address_false:
         Fixture (defined in conftest.py)
     :return: None
     """
-    response = bank_app_check_time_at_address_false \
-        .check_time_at_address()
+    response = bank_app_check_time_at_address_false.check_time_at_address()
     assert response is False
 
 
@@ -98,7 +94,7 @@ def test_credit_check_approved(bank_app_credit_check_true) -> None:
     :return: None
     """
     response = bank_app_credit_check_true.credit_check()
-    assert response == {'Status': 'APPROVED'}
+    assert response == {"Status": "APPROVED"}
 
 
 def test_credit_check_declined(bank_app_credit_check_false) -> None:
@@ -109,4 +105,4 @@ def test_credit_check_declined(bank_app_credit_check_false) -> None:
     :return: None
     """
     response = bank_app_credit_check_false.credit_check()
-    assert response == {'Status': 'DECLINED'}
+    assert response == {"Status": "DECLINED"}
