@@ -1,6 +1,6 @@
-# Pytest Code Coverage Example
+# Pytest Code Coverage Example - Simple Bank App
 
-[//]: # (This repo contains the sample code for the article - [Easy And Quick Python Local Lambda Unit Testing for AWS Lambda Functions]&#40;https://pytest-with-eric.com/python-local-development/python-local-lambda/&#41;)
+This repo contains the sample code for the article - [How To Generate Beautiful & Comprehensive Pytest Code Coverage Reports (With Example)](https://pytest-with-eric.com/pytest-best-practices/pytest-code-coverage-reports//)
 
 
 # Requirements
